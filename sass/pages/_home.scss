@@ -1,0 +1,50 @@
+main {
+  box-sizing: border-box;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  background-image: url(/img/main__bg.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: initial;
+  box-sizing: border-box;
+}
+
+.main {
+  display: flex;
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__text {
+    font-family: "BebasNeue", "Helvetica";
+    font-size: 72px;
+    color: $blue-primary;
+  }
+  &__name {
+    font-family: "PrettyQueen", "Helvetica";
+    font-size: 64px;
+    color: $blue-secondary;
+  }
+  &__paragraph {
+    font-family: "BebasNeueProBook";
+    font-size: 28px;
+    padding-right: 10rem;
+  }
+  &__image{
+    img {
+      height: 95%;
+    }
+  }
+}
+
+
+
+@media (max-width: 1250px) {
+  .main__paragraph {
+    padding-right: 2rem;
+  }
+}
